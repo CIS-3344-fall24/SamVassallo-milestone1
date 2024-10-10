@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Quiz</title>
+    <style>
+         .question {
+            width: 400px; 
+            border-radius: 30px;
+            font-size: 130%;
+            text-indent: 20px;
+    }
+    @media (max-width: 768px) {
+            #subjects-container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .subject {
+                font-size: 120%; 
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #d1d2f9">
+    
+    <h1>Welcome to the animal quiz. Please answer to the best of your knowledge. Some questions have multiple answers</h1>
+
+
+    <form> 
+        <!-- possible extra credit for putting each question in its own box using divs for eac subject -->
+        <div class="question" style="background-color: #a3bcf9">
+        <p>What is the fastest aniaml alive</p>
+        <input type="radio" id="elephant" value="elephant" name="q1">
+        <label for="elephant">Elephant</label><br>
+        <input type="radio"id='cheetah' value="Cheetah "name="q1">
+        <label for="cheetah">Cheeetah</label><br>
+        <input type="radio"id='liom' value="lion "name="q1">
+        <label for="lion">Lion</label><br>
+        <input type="radio"id='rhino' value="rhino "name="q1">
+        <label for="rhino">Rhino</label><br><br>
+    </div>
+    <div class="question"style="background-color: #a3bcf9">
+        <p>Which of these aniamls are nocturnal (Select all the apply)</p>
+        <input type="checkbox"id='owl' value="owl" name="q2">
+        <label for="owl">Owl</label><br>
+        <input type="checkbox"id='turtle' value="turtle" name="q2">
+        <label for="turtle">Turtle</label><br>
+        <input type="checkbox"id='raccoon' value="raccoon" name="q2">
+        <label for="raccoon">Racconn</label><br>
+        <input type="checkbox"id='bear' value="bear" name="q2">
+        <label for="bear">Bear</label><br><br>
+    </div>
+
+    <div class="question"style="background-color: #a3bcf9">
+        <p>What is the main food that panadas eat</p>
+        <input type="radio"id='grass' value="grass" name="q3">
+        <label for="grass">Grass</label><br>
+        <input type="radio"id='bark' value="bark" name="q3">
+        <label for="bark">Tree Bark</label><br>
+        <input type="radio"id='bamboo' value="bamboo" name="q3">
+        <label for="bamboo">Bamboo</label><br><br>
+    </div>
+
+    <div class="question"style="background-color: #a3bcf9">
+        <p>What animal builds dams</p>
+        <input type="radio"id="Fish" name="q4">
+        <label for="Fish">Fish</label><br>
+        <input type="radio" name="q4">
+        <label>Aligator</label><br>
+        <input type="radio" name="q4">
+        <label>Beaver</label><br>
+        <input type="radio" name="q4">
+        <label>Hippo</label><br><br>
+    </div>
+
+    <div class="question"style="background-color: #a3bcf9">
+        <p>Cats are nocturnal (T or F)</p>
+        <input type="radio"  name="q5">
+        <label>True</label><br>
+        <input type="radio" name="q5">
+        <label>False</label><br><br>
+    </div><br>
+    <input type="button" value="Submit Quiz" style="font-size:larger" onclick="window.location.href='completeAnimal.html';">
+    </form>
+    
+</body>
+</html>
+
+
+echo "# SamanthaVassallo-ms11" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CIS-3344-fall24/SamanthaVassallo-ms1.git
+git push -u origin main

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Quiz</title>
+    <style>
+        #welcome{
+            text-align: center;
+            font-weight: bold;
+            background-color: #576490;
+            max-width: 1160px;
+            margin: 0 auto; 
+            padding: 20px; 
+            border-radius: 15px;
+            
+        }
+
+        #subjects-container{
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            
+        }
+
+         .subject {
+            width: 400px; 
+            border-radius: 30px;
+            text-align: center;
+            font-size: 150%;
+    }
+        img {
+            border-radius: 100;
+            width: 300px;
+            height: 300px;
+            align-items: center;
+            
+        }
+        @media (max-width: 768px) {
+            #subjects-container {
+                flex-direction: column; 
+                align-items: center; 
+        }
+    }
+
+        @media (max-width: 480px) {
+            .subject {
+                font-size: 120%; 
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #c9cad9;">
+    
+    <div id="welcome">
+        <h1>Welcome to the Knowledge Quiz</h1>
+        <p>These quizzes will test your basic knowledge of the subjects below</p>
+    </div>
+    <div id="subjects-container">
+        <div class="subject" style="background-color: #d1d2f9;">
+            <h3>Animals</h3>
+            <p>This will test your basic knowledge of animals/facts about animals</p>
+            <img src="animals.jpg" alt="Photo of animals" id="img">
+            <form>
+                <input type ="text" value="What is your name?" id="name" style="color:grey"><br>
+                <input type="text" value="What is your email?" id="email" style="color:grey"><br>
+                <input type="text" value="Please confrim email" id="emailCheck" style="color:grey"><br>
+                <input type="button" value="Start Quiz" id="startbutton"  onclick="window.location.href='animal.html'">
+            </form>
+        </div>
+        <div class="subject" style="background-color: #a3bcf9;">
+            <h3>Math</h3>
+            <p>In this test, you have to answer basic math questions</p>
+            <img src="math.jpg" alt="Photo of math stuff on a board" id="img">
+            <form>
+                <input type ="text" value="What is your name?" id="name" style="color:grey"><br>
+                <input type="text" value="What is your email?" id="email" style="color:grey"><br>
+                <input type="text" value="Please confrim email" id="emailCheck" style="color:grey"><br>
+                <input type="button" value="Start Quiz" id="startbutton" onclick="window.location.href='math.html'">
+            </form>
+        
+        </div>
+        <div class="subject" style="background-color: #7796cb;">
+            <h3>Sports!</h3>
+            <p>In this one, you will be asked about sports</p>
+            <img src="sports.jpg" alt="Photo of philly sports logos" id="img">
+            <form>
+                <input type ="text" value="What is your name?" id="name" style="color:grey"><br>
+                <input type="text" value="What is your email?" id="email" style="color:grey"><br>
+                <input type="text" value="Please confrim email" id="emailCheck" style="color:grey"><br>
+                <input type="button" value="Start Quiz" id="startbutton" onclick="window.location.href='sports.html'">
+            </form>
+            
+    </div>
+</body>
+</html>

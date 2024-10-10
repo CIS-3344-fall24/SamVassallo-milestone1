@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+</head>
+<style>
+    .questions {
+       width: 400px; 
+       border-radius: 30px;
+       font-size: 130%;
+       text-indent: 20px;
+}
+@media (max-width: 768px) {
+            #subjects-container {
+                flex-direction: column; 
+                align-items: center; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .subject {
+                font-size: 120%; 
+            }
+        }
+</style>
+<body style="background-color: #7796cb;">
+    <h1>Welcome to the moive quiz. Answe the questions to the best of your ability</h1>
+
+    <form>
+        <div class="questions" style="background-color: #d1d2f9">
+            <p>What is the name of Philadelphia hockey team</p>
+            <input type="radio" name="q1">
+            <label>Capitals</label><br>
+            <input type="radio" name="q1">
+            <label>Kings</label><br>
+            <input type="radio" name="q1">
+            <label>Red Wings</label><br>
+            <input type="radio" name="q1">
+            <label>Flyers</label><br>
+        </div>
+
+        <div class="questions" style="background-color: #d1d2f9;">
+            <p>What is the name of the Philadelphia football team</p>
+            <input type="radio" name="q2">
+            <label>Eagles</label><br>
+            <input type="radio" name="q2">
+            <label>Giants</label><br>
+            <input type="radio" name="q2">
+            <label>Steelers</label><br>
+            <input type="radio" name="q2">
+            <label>Vikings</label><br>
+        </div>
+
+        <div class="questions" style="background-color: #d1d2f9;">
+            <p>What is the name of the Philadelphia Baseball team</p>
+            <input type="radio" name="q3">
+            <label>Mets</label><br>
+            <input type="radio" name="q3">
+            <label>Phillies</label><br>
+            <input type="radio" name="q3">
+            <label>Red Soxs</label><br>
+            <input type="radio" name="q3">
+            <label>White Soxs</label><br>
+            </div>
+        <div class="questions" style="background-color: #d1d2f9;">
+            <p>What year was the Philadephia hockey team founded </p>
+            <input type="radio" name="q4">
+            <label>1967</label><br>
+            <input type="radio" name="q4">
+            <label>1965</label><br>
+            <input type="radio" name="q4">
+            <label>1963</label><br>
+            <input type="radio" name="q4">
+            <label>1964</label><br>
+        </div>
+
+        <div class="questions" style="background-color: #d1d2f9;">
+            <p>When was the Philadelphia football team founded</p>
+            <input type="radio" name="q5">
+            <label>1930</label><br>
+            <input type="radio" name="q5">
+            <label>1934</label><br>
+            <input type="radio" name="q5">
+            <label>1933</label><br>
+            <input type="radio" name="q5">
+            <label>1936</label><br>
+        </div>
+        <input type="button" value="Submit Quiz" style="font-size:larger" onclick="window.location.href='completeSports.html';">
+    </form>
+
+
+</body>
+</html>
